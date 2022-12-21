@@ -22,13 +22,14 @@
     "url": "https://github.com/surajpheudin/create-withstyle/issues",
     "email": "pheudinsuraj@gmail.com"
   },
-  "author": {
-    "name": "Suraj Pheudin",
-    "email": "pheudinsuraj@gmail.com",
-    "url": "https://surajpheudin.com.np/"
-  },
 
-  "contributors": [{
+  "contributors": [
+    {
+      "name": "Suraj Pheudin",
+      "email": "pheudinsuraj@gmail.com",
+      "url": "https://surajpheudin.com.np/"
+    },
+    {
     "name": "Rudeep Khatiwada",
     "email": "khatiwadarudeep@gmail.com",
     "url": "https://khatiwadarudip.com.np"
