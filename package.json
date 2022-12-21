@@ -27,6 +27,12 @@
     "email": "pheudinsuraj@gmail.com",
     "url": "https://surajpheudin.com.np/"
   },
+
+  "contributors": [{
+    "name": "Rudeep Khatiwada",
+    "email": "khatiwadarudeep@gmail.com",
+    "url": "https://khatiwadarudip.com.np"
+  }],
   "files": [
     "index.js",
     "dist",
