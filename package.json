@@ -37,6 +37,7 @@
     "url": "https://github.com/surajpheudin/create-withstyle.git"
   },
   "license": "ISC",
+  "release": { "branches": [ "main" ] },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.17",
