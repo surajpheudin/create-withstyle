@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import muiLogo from './assets/mui.svg'
 import './App.css'
 
 function App() {
@@ -8,24 +9,16 @@ function App() {
   return (
     <div className="App">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
         <a href="https://reactjs.org" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+        <a href="https://mui.com/" target="_blank">
+          <img src={muiLogo} className="logo mui" alt="MUI logo" />
+        </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <h1>React + MUI</h1>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click on the MUI and React logos to learn more
       </p>
     </div>
   )
