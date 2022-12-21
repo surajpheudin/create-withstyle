@@ -1,6 +1,6 @@
 {
   "name": "create-withstyle",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "create-withstyle",
   "type": "module",
   "main": "index.js",
