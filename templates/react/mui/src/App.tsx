@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import muiLogo from './assets/mui.svg'
+import Typography from '@mui/material/Typography';
 import './App.css'
 
 function App() {
@@ -17,9 +18,11 @@ function App() {
         </a>
       </div>
       <h1>React + MUI</h1>
-      <p className="read-the-docs">
-        Click on the MUI and React logos to learn more
-      </p>
+        
+      <Typography sx={{fontWeight:'600'}}>
+      Click on the MUI and React logos to learn more
+      </Typography>
+      
     </div>
   )
 }
