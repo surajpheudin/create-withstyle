@@ -1,11 +1,11 @@
 {
-  "name": "create-with-style",
-  "version": "0.0.1",
-  "description": "create-with-style",
+  "name": "create-withstyle",
+  "version": "0.0.0-development",
+  "description": "create-withstyle",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "create-with-style": "index.js"
+    "create-withstyle": "index.js"
   },
   "scripts": {
     "dev": "node --loader ts-node/esm src/index.ts",
@@ -13,13 +13,13 @@
     "preview": "node index.js"
   },
   "keywords": [
-    "create-with-style",
+    "create-withstyle",
     "style",
     "templates"
   ],
-  "homepage": "https://github.com/surajpheudin/surajpheudin",
+  "homepage": "https://github.com/surajpheudin/create-withstyle",
   "bugs": {
-    "url": "https://github.com/surajpheudin/surajpheudin/issues",
+    "url": "https://github.com/surajpheudin/create-withstyle/issues",
     "email": "pheudinsuraj@gmail.com"
   },
   "author": {
@@ -34,12 +34,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/surajpheudin/surajpheudin.git"
+    "url": "https://github.com/surajpheudin/create-withstyle.git"
   },
   "license": "ISC",
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.17",
+    "semantic-release": "^19.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4",
     "unbuild": "^1.0.2"

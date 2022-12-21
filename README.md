@@ -3,17 +3,17 @@
 With NPM:
 
 ```bash
-$ npm create with-style@latest
+$ npm create withstyle@latest
 ```
 
 With Yarn:
 
 ```bash
-$ yarn create with-style
+$ yarn create withstyle
 ```
 
 With PNPM:
 
 ```bash
-$ pnpm create with-style
+$ pnpm create withstyle
 ```
