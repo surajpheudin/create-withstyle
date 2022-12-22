@@ -52,7 +52,7 @@ _create-withstyle_ has adopted a Code of Conduct that we expect project particip
 
 ## Contributing Guide
 
-Read our [contributing guide](https://github.com/surajpheudin/create-withstyle/contributing.md) to learn about our development process, how to propose new templates, bug fixes and improvements, and how to build and test your changes to _create-withstyle_.
+Read our [contributing guide](https://github.com/surajpheudin/create-withstyle/CONTRIBUTING.md) to learn about our development process, how to propose new templates, bug fixes and improvements, and how to build and test your changes to _create-withstyle_.
 
 ## Good First Issues
 
