@@ -1,4 +1,4 @@
-# Create-WithStyle Contributing Guide
+# create-withstyle Contributing Guide
 
 Hi! We're really excited that you're interested in contributing to _create_withstyle_. Before submitting your contribution, please read through the following guide.
 
@@ -19,3 +19,48 @@ To test this package:
 
 1. Run `npm run build` in root folder.
 2. Run `npm preview` in root folder.
+
+# New Template Requirements
+
+When adding the new feature i.e. template to this package, you have to consider following things:
+
+## Feature to be included
+
+1. Customized Theme
+   - Fonts
+   - Breakpoints
+   - Colors
+   - and Others(optional)
+2. Theme Mode Configuration
+   - Light
+   - Dark
+   - and Others(optional)
+3. Sample usage of all typography
+   - Heading1
+   - Heading2
+   - Heading3
+   - Heading4
+   - Heading5
+   - Heading6
+   - paragraph
+   - span
+4. One Simple Form Design
+   - Form
+   - Inputs (text, checkbox, select and others)
+   - Button
+
+## Mobile First Design
+
+Your design and implementation should be on mobile first approach.
+
+# Feature Request
+
+If you feel something need to be added for good reasons, then you can also contribute to the package by reqesting the feature on [this page](https://github.com/surajpheudin/create-withstyle/issues).
+
+# Opening an Issue
+
+You can contribute to the package by adding an issue on [this page](https://github.com/surajpheudin/create-withstyle/issues).
+
+# Thank You
+
+We value the contribution of the community. We are always grateful for your support. Thank you for being amazing.

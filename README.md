@@ -48,11 +48,11 @@ The main purpose of this repository is to continue add more frameworks and it's 
 
 ## Code of Conduct
 
-_create-withstyle_ has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](https://github.com/surajpheudin/create-withstyle/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
+_create-withstyle_ has adopted a Code of Conduct that we expect project participants to adhere to. Please read [the full text](https://github.com/surajpheudin/create-withstyle/blob/main/CODE_OF_CONDUCT.md) so that you can understand what actions will and will not be tolerated.
 
 ## Contributing Guide
 
-Read our [contributing guide](https://github.com/surajpheudin/create-withstyle/CONTRIBUTING.md) to learn about our development process, how to propose new templates, bug fixes and improvements, and how to build and test your changes to _create-withstyle_.
+Read our [contributing guide](https://github.com/surajpheudin/create-withstyle/blob/main/CONTRIBUTING.md) to learn about our development process, how to propose new templates, bug fixes and improvements, and how to build and test your changes to _create-withstyle_.
 
 ## Good First Issues
 
