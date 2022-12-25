@@ -2,8 +2,17 @@ import path from "node:path";
 import fs from "node:fs";
 import inquirer, { QuestionCollection } from "inquirer";
 import * as url from "url";
+import { Framework } from "./interface";
 
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
+
+const FRAMEWORKS: Framework[] = [
+  "angular",
+  "react",
+  "svelte",
+  "vanilla",
+  "vue",
+];
 
 const questions: QuestionCollection = [
   {
@@ -31,16 +40,7 @@ const questions: QuestionCollection = [
     type: "list",
     name: "framework",
     message: "Select a framework: ",
-    choices: ["Vanilla", "React", "Vue", "Svelte"],
-    filter(val: string) {
-      return val.toLowerCase();
-    },
-  },
-  {
-    type: "list",
-    name: "style",
-    message: "Select a variant: ",
-    choices: ["Tailwindcss", "Chakra-ui", "MUI"],
+    choices: FRAMEWORKS.map((each) => capitalize(each)),
     filter(val: string) {
       return val.toLowerCase();
     },
@@ -50,7 +50,21 @@ const questions: QuestionCollection = [
 const init = async () => {
   console.log();
 
-  const { projectName, framework, style } = await inquirer.prompt(questions);
+  const { projectName, framework } = await inquirer.prompt(questions);
+
+  const styleQuestion: QuestionCollection = [
+    {
+      type: "list",
+      name: "style",
+      message: "Select a variant: ",
+      choices: getStyleChoice(framework),
+      filter(val: string) {
+        return val.toLowerCase();
+      },
+    },
+  ];
+
+  const { style } = await inquirer.prompt(styleQuestion);
 
   const targetDir = projectName as string;
   const templateDir = path.resolve(
@@ -129,4 +143,43 @@ function getPackageDetails(data: string) {
     name,
     version,
   };
+}
+
+function getStyleChoice(framework: Framework) {
+  console.log("framework", framework);
+
+  let list: string[] = [];
+  switch (framework) {
+    case "angular":
+      list = ["Angular-Material", "DevExtreme", "Ng-Bootstrap"];
+      break;
+
+    case "react":
+      list = ["Tailwindcss", "Chakra-ui", "MUI"];
+      break;
+
+    case "svelte":
+      list = ["Svelte-Material-UI", "SvelteStrap"];
+      break;
+
+    case "vanilla":
+      list = ["Tailwindcss", "Bootstrap"];
+      break;
+
+    case "vue":
+      list = ["BootstrapVue", "VueTailwind"];
+      break;
+
+    default:
+      break;
+  }
+
+  return list;
+}
+
+function capitalize(sentence: string) {
+  const words = sentence.split(" ");
+  return words
+    .map((word) => word[0].toUpperCase() + word.substring(1))
+    .join(" ");
 }
