@@ -43,7 +43,6 @@ When adding the new feature i.e. template to this package, you have to consider 
    - Heading5
    - Heading6
    - paragraph
-   - span
 4. One Simple Form Design
    - Form
    - Inputs (text, checkbox, select and others)
