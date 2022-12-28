@@ -5,18 +5,22 @@
 ## Templates
 
 - react
-  - chakra-ui `*`
-  - mui
   - tailwindcss
+  - chakra-ui
+  - mui
+- angular
+  - angular-material `*`
+  - devextreme `*`
+  - ng-bootstrap `*`
 - svelte
   - Svelte-Material-UI `*`
   - SvelteStrap `*`
-- vanilla
-  - tailwindcss `*`
-  - bootstrap `*`
 - vue
   - BootstrapVue `*`
   - VueTailwind `*`
+- vanilla
+  - tailwindcss `*`
+  - bootstrap `*`
 
 Note: `*` represents that the template is not available yet.
 
