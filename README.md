@@ -1,6 +1,6 @@
 # Introduction
 
-**create-withstye** is a nodejs package for scaffolding your web project with most popular frontend frameworks pre-setup with styling library.
+**create-withstyle** is a nodejs package for scaffolding your web project with most popular frontend frameworks pre-setup with styling library.
 
 ## Templates
 
