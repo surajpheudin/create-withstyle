@@ -40,7 +40,7 @@ const Typography: FC = () => {
           md: 2,
         }}
       >
-        Paragraph: create-withstye is a nodejs package for scaffolding your web
+        Paragraph: create-withstyle is a nodejs package for scaffolding your web
         project with most popular frontend frameworks pre-setup with styling
         library.
       </Text>
