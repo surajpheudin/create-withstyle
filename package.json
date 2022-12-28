@@ -22,13 +22,11 @@
     "url": "https://github.com/surajpheudin/create-withstyle/issues",
     "email": "pheudinsuraj@gmail.com"
   },
-  
   "author": {
     "name": "Suraj Pheudin",
     "email": "pheudinsuraj@gmail.com",
     "url": "https://surajpheudin.com.np/"
   },
-  
   "files": [
     "index.js",
     "dist",
@@ -39,7 +37,11 @@
     "url": "https://github.com/surajpheudin/create-withstyle.git"
   },
   "license": "ISC",
-  "release": { "branches": [ "main" ] },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.17",
