@@ -4,7 +4,7 @@ import inquirer, { QuestionCollection } from "inquirer";
 import * as url from "url";
 import { Framework } from "./interface";
 
-const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
+// FIXME: I wanted to move below constants to separate file called config.ts. But while building with tsc, resulted js file import config file without js extension which causes an error.
 
 const FRAMEWORKS: Framework[] = [
   "angular",
@@ -13,6 +13,13 @@ const FRAMEWORKS: Framework[] = [
   "vanilla",
   "vue",
 ];
+const ANGULAR_STYLES = ["Angular-Material", "DevExtreme", "Ng-Bootstrap"];
+const REACT_STYLES = ["Tailwindcss", "Chakra-ui", "MUI"];
+const SVELTE_STYLES = ["Svelte-Material-UI", "SvelteStrap"];
+const VANILLA_STYLES = ["Tailwindcss", "Bootstrap"];
+const VUE_STYLES = ["BootstrapVue", "VueTailwind"];
+
+const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
 const questions: QuestionCollection = [
   {
@@ -146,28 +153,26 @@ function getPackageDetails(data: string) {
 }
 
 function getStyleChoice(framework: Framework) {
-  console.log("framework", framework);
-
   let list: string[] = [];
   switch (framework) {
     case "angular":
-      list = ["Angular-Material", "DevExtreme", "Ng-Bootstrap"];
+      list = ANGULAR_STYLES;
       break;
 
     case "react":
-      list = ["Tailwindcss", "Chakra-ui", "MUI"];
+      list = REACT_STYLES;
       break;
 
     case "svelte":
-      list = ["Svelte-Material-UI", "SvelteStrap"];
+      list = SVELTE_STYLES;
       break;
 
     case "vanilla":
-      list = ["Tailwindcss", "Bootstrap"];
+      list = VANILLA_STYLES;
       break;
 
     case "vue":
-      list = ["BootstrapVue", "VueTailwind"];
+      list = VUE_STYLES;
       break;
 
     default:
