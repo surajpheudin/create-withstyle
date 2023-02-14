@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo ""
+echo "linting your code"
+echo "----please wait-----"
+
+npx lint-staged
+
+echo "Linted Successfully!"
+
