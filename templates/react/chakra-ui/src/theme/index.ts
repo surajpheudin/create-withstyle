@@ -1,34 +1,22 @@
-import {
-  extendTheme,
-  type ThemeConfig,
-  withDefaultColorScheme,
-} from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 import styles from "./styles";
-import colors from "./foundations/colors";
 import breakpoints from "./foundations/breakpoints";
 import fonts from "./foundations/fonts";
+import fontWeights from "./foundations/fontWeights";
+import { colors } from "./foundations/colors";
+import Text from "./components/Text";
+import { buttonTheme } from "./components/buttonTheme";
 
-const config: ThemeConfig = {
-  initialColorMode: "light",
-  useSystemColorMode: false,
-};
-
-const overrides = {
-  config,
-  colors,
-  styles,
-  fonts,
-  breakpoints,
-  components: {
-    h1: {
-      fontSize: "48px",
+const theme = extendTheme({
+    styles,
+    fonts,
+    breakpoints,
+    fontWeights,
+    colors,
+    components: {
+        Text: Text,
+        Button: buttonTheme
     },
-  },
-};
+});
 
-export const theme = extendTheme(
-  overrides,
-  withDefaultColorScheme({
-    colorScheme: "brand",
-  })
-);
+export default theme;

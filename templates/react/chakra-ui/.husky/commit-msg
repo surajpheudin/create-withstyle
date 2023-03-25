@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo ""
+echo "checking your commit message"
+echo "----please wait-----"
+
+npx --no -- commitlint --edit ${1}
+
+echo "Committed Successfully!"

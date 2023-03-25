@@ -1,9 +1,9 @@
 const breakpoints = {
-  sm: "320px",
-  md: "768px",
-  lg: "960px",
-  xl: "1200px",
-  "2xl": "1536px",
+    sm: "30em",
+    md: "48em",
+    lg: "62em",
+    xl: "80em",
+    "2xl": "96em",
 };
 
 export default breakpoints;
