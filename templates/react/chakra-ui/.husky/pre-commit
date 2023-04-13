@@ -13,6 +13,6 @@ echo ""
 echo "building your code"
 echo "----please wait-----"
 
-pnpm build
+npm run build
 
 echo "Linted Successfully!"
