@@ -64,4 +64,4 @@ To help you get your feet wet and get you familiar with our contribution process
 
 ## License
 
-_create-withstyle_ is [MIT licensed](https://github.com/surajpheudin/create-withstyle/blob/main/LICENSE).
+_create-withstyle_ is [MIT licensed](https://github.com/surajpheudin/create-withstyle/blob/main/LICENSE)
