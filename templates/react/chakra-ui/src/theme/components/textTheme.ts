@@ -1,12 +1,12 @@
 import { defineStyleConfig } from "@chakra-ui/react";
 
-const Text = defineStyleConfig({
+const textTheme = defineStyleConfig({
     // The styles all button have in common
     baseStyle: {
         color: "black",
     },
     variants: {
-        secondary: {
+        disabled: {
             color: "gray.300",
         },
         error: {
@@ -15,4 +15,4 @@ const Text = defineStyleConfig({
     },
 });
 
-export default Text;
+export default textTheme;

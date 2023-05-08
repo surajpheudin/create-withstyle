@@ -1,11 +1,11 @@
 import { extendTheme } from "@chakra-ui/react";
-import styles from "./styles";
+import { buttonTheme } from "./components/buttonTheme";
+import textTheme from "./components/textTheme";
 import breakpoints from "./foundations/breakpoints";
+import { colors } from "./foundations/colors";
 import fonts from "./foundations/fonts";
 import fontWeights from "./foundations/fontWeights";
-import { colors } from "./foundations/colors";
-import Text from "./components/Text";
-import { buttonTheme } from "./components/buttonTheme";
+import styles from "./styles";
 
 const theme = extendTheme({
     styles,
@@ -14,8 +14,8 @@ const theme = extendTheme({
     fontWeights,
     colors,
     components: {
-        Text: Text,
-        Button: buttonTheme
+        Text: textTheme,
+        Button: buttonTheme,
     },
 });
 
