@@ -1,5 +1,5 @@
-import { Box, Grid, Progress } from "@chakra-ui/react";
 import { ViteIcon } from "@assets/svgs";
+import { Box, Grid, Progress } from "@chakra-ui/react";
 
 const GlobalLoader = () => {
     return (
